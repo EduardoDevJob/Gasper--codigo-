@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#inputVideo{
+    display:none ;
+}
+
+#inputVideo2{
+    display: none;
+}
+
+#inputVideo3{
+    display: none;
+}
+
+#inputVideo4{
+    display: none;
+}
+
+#inputVideo5{
+    display: none;
+}
+
+#inputVideo6{
+    display: none;
+}
+
+#inputVideo7{
+    display: none;
+}
+
+#inputVideo8{
+    display: none;
+}
+
+#inputVideo9{
+    display: none;
+}
+
+#inputVideo10{
+    display: none;
+}
+
+#inputVideo11{
+    display: none;
+}
+
+#video{
+    display:none;
+    position: fixed;
+    left: 15%;
+    top: 5%;
+    width: 70%;
+}
+
+.fechar{
+    display: none;
+    position: fixed;
+    width: 10%;
+    bottom: -5px;
+    left: 45%;
+}
+
+.principal{
+    background-image: url('../Img/background3.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+}
+
+div p{
+    padding-top: 60px;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    font-size: 24px;
+}
+
+.titulo{
+    text-shadow: 6px 6px 6px black;
+    color: white;
+}
+
+div button{
+    cursor: pointer;
+    background-color: #e8311f;
+    height: 50px;
+    width:100%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.preços{
+    background-color: rgba(219, 219, 219, 0.952);
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #e8311f;
+    padding: 15px;
+}
+
+.organizar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.precinhos{
+    margin-bottom: 16px;
+    display: flex;
+    width: 50%;
+}
+
+.precinhos h4{
+    word-wrap: break-word;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+#precosAtividades{
+    width: 100%;
+}
+
+
+#bungeeJump{
+    padding: 15px;
+}
+
+#bungeeJump h2{
+    color: #e8311f;
+    font-size: 30px;
+}
+
+#bungeeJump h6{
+    font-size: 20px;
+}
+
+#bungeeJump p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.bungeeJump{
+    background-color: rgba(219, 219, 219, 0.952);
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #e8311f;
+}
+
+.pendulo{
+    background-color: rgba(219, 219, 219, 0.952);
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #e8311f;
+}
+
+.pendulo{
+    padding: 15px;
+}
+
+.pendulo h2{
+    color: #e8311f;
+    font-size: 30px;
+}
+
+.pendulo h6{
+    font-size: 20px;
+}
+
+.pendulo p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.arvorismo{
+    background-color: rgba(219, 219, 219, 0.952);
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #e8311f;
+}
+
+.arvorismo{
+    padding: 15px;
+}
+
+.arvorismo h2{
+    color: #e8311f;
+    font-size: 30px;
+}
+
+.arvorismo h6{
+    font-size: 20px;
+}
+
+.arvorismo p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.estilingue{
+    background-color: rgba(219, 219, 219, 0.952);
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #e8311f;
+}
+
+.estilingue{
+    padding: 15px;
+}
+
+.estilingue h2{
+    color: #e8311f;
+    font-size: 30px;
+}
+
+.estilingue h6{
+    font-size: 20px;
+}
+
+.estilingue p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.trilha{
+    background-color: rgba(219, 219, 219, 0.952);
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #e8311f;
+}
+
+.trilha{
+    padding: 15px;
+}
+
+.trilha h2{
+    color: #e8311f;
+    font-size: 30px;
+}
+
+.trilha h6{
+    font-size: 20px;
+}
+
+.trilha p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.rapel{
+    background-color: rgba(219, 219, 219, 0.952);
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #e8311f;
+}
+
+.rapel{
+    padding: 15px;
+}
+
+.rapel h2{
+    color: #e8311f;
+    font-size: 30px;
+}
+
+.rapel h6{
+    font-size: 20px;
+}
+
+.rapel p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.quadri{
+    background-color: rgba(219, 219, 219, 0.952);
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #e8311f;
+}
+
+.quadri{
+    padding: 15px;
+}
+
+.quadri h2{
+    color: #e8311f;
+    font-size: 30px;
+}
+
+.quadri h6{
+    font-size: 20px;
+}
+
+.quadri p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.superman{
+    background-color: rgba(219, 219, 219, 0.952);
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #e8311f;
+}
+
+.superman{
+    padding: 15px;
+}
+
+.superman h2{
+    color: #e8311f;
+    font-size: 30px;
+}
+
+.superman h6{
+    font-size: 20px;
+}
+
+.superman p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.tirolesa{
+    background-color: rgba(219, 219, 219, 0.952);
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #e8311f;
+}
+
+.tirolesa{
+    padding: 15px;
+}
+
+.tirolesa h2{
+    color: #e8311f;
+    font-size: 30px;
+}
+
+.tirolesa h6{
+    font-size: 20px;
+}
+
+.tirolesa p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.escalada{
+    background-color: rgba(219, 219, 219, 0.952);
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #e8311f;
+}
+
+.escalada{
+    padding: 15px;
+}
+
+.escalada h2{
+    color: #e8311f;
+    font-size: 30px;
+}
+
+.escalada h6{
+    font-size: 20px;
+}
+
+.escalada p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.moto{
+    background-color: rgba(219, 219, 219, 0.952);
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #e8311f;
+}
+
+.moto{
+    padding: 15px;
+}
+
+.moto h2{
+    color: #e8311f;
+    font-size: 30px;
+}
+
+.moto h6{
+    font-size: 20px;
+}
+
+.moto p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    margin-top: 100px;
+    text-align: center;
+}

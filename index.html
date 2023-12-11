@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="icon" href="Img/iconGasper.ico">
+    <title>Gasper - Toten</title>
+</head>
+
+<body>
+
+    <!--  Aqui começa a section do codigo inteiro -->
+
+    <section class="principal">
+
+                <div class="divButtonUm">
+
+                        <div>
+                            <p class="titulo">Bungee Jump</p>
+                            <button class="buttonVideo" id="buttonVideo"><strong>Video</strong></button>
+                                                                                                    <div class="video">
+                                                                                                        <input type="file" id="inputVideo" accept="video/*" onchange="reproduzirVideo(this)">
+                                                                                                        <video id="video" controls hidden></video>
+                                                                                                        <button onclick="acabarVideo()" id="butFechar" class="fechar" hidden>Fechar</button>
+                                                                                                    </div>
+                            <button onclick="abrirBungee()"><strong>SAIBA MAIS</strong></button>
+                            <div class="modal">
+                                <dialog id="bungeeJump" class="bungeeJump">
+                                    <h2>BUNGEE JUMP</h2>
+                                    <h6>VALOR: individual R$ 150,00</h6>
+                                    <p>O maior Bungee Jump do Brasil está aqui é uma experiência inigualável! Atividade com alto nível de adrenalina! Salto de uma plataforma fixada a 150m de altura. Queda entre 40m e 60m. A atividade pode ser realizada com o equipamento preso nos tornozelos ou preso pela cintura (não pendulando de cabeça para baixo).</p>                       
+                                    <p>CRIANÇAS: Tamanho mínimo: 1.50m.</p>
+                                    <p>PESO MÁXIMO: 35kg mínimo, máximo 130kg.</p>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="titulo">Pêndulo no paredão</p>
+                            <button class="buttonVideo" id="buttonVideo2"><strong>Video</strong></button>
+                                                                                                    <div class="video">
+                                                                                                        <input type="file" id="inputVideo2" accept="video/*" onchange="reproduzirVideo(this)">
+                                                                                                        <video id="video" controls></video>
+                                                                                                        <button onclick="acabarVideo()" id="butFechar" class="fechar" hidden>Fechar</button>
+                                                                                                    </div>
+                            <button onclick="abrirPendulo()"><strong>SAIBA MAIS</strong></button>
+                            <div class="modal">
+                                <dialog class="pendulo">
+                                    <h2>PÊNDULO NO PAREDÃO</h2>
+                                    <p>A mais nova e esperada atividade do parque chegou. O pêndulo no meio do paredão é um desafio de arrepiar. São 150m de altura e 70m de queda em corda estática, para completar as melhores experiências da sua vida aqui conosco.</p>                       
+                                    <p>CRIANÇAS: Tamanho mínimo: 1.50m.</p>
+                                    <p>PESO MÍNIMO/MÁXIMO: Altura mínima apenas – peso máximo: 140kg.</p>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="titulo">Arvorismo</p>
+                            <button class="buttonVideo" id="buttonVideo3"><strong>Video</strong></button>
+                                                                                                    <div class="video">
+                                                                                                        <input type="file" id="inputVideo3" accept="video/*" onchange="reproduzirVideo(this)">
+                                                                                                        <video id="video" controls></video>
+                                                                                                    </div>
+                            <button onclick="abrirArvorismo()"><strong>SAIBA MAIS</strong></button>
+                            <div class="modal">
+                                <dialog class="arvorismo">
+                                    <h2>ARVORISMO</h2>
+                                    <h6>VALOR: R$ 30,00</h6>
+                                    <p>O arvorismo é uma travessia de plataformas com diferentes desafios, montados entre copas das árvores e postes, tendo como objetivo ultrapassar diferentes tipos de obstáculos, em um total de dez percursos, levando o aventureiro ao topo da torre do parque, onde a vista é ímpar. Essa atividade é de grau médio de condicionamento físico.</p>                       
+                                    <p>CRIANÇAS: Tamanho mínimo para crianças: 1.10m – acompanhado de um adulto OU 1.30m – sozinho.</p>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <div>            
+                            <p class="titulo">Estilingue</p>
+                            <button class="buttonVideo" id="buttonVideo4"><strong>Video</strong></button>
+                                                                                                    <div class="video">
+                                                                                                        <input type="file" id="inputVideo4" accept="video/*" onchange="reproduzirVideo(this)">
+                                                                                                        <video id="video" controls></video>
+                                                                                                    </div>
+                            <button onclick="abrirEstilingue()"><strong>SAIBA MAIS</strong></button>
+                            <div class="modal">
+                                <dialog class="estilingue">
+                                    <h2>ESTILINGUE</h2>
+                                    <h6>VALOR: R$ 40,00</h6>
+                                    <p>Atividade aonde o aventureiro é lançado na vertical, através de dois elásticos laterais, a mais de 15m de altura.</p>                       
+                                    <p>CRIANÇAS: mínimo 50kg (pode ser feito em dupla, máximo 90kg).</p>
+                                    <p>PESO MÁXIMO: 90kg.</p>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="titulo">Moto eletrica</p>
+                            <button class="buttonVideo" id="buttonVideo5"><strong>Video</strong></button>
+                                                                                                    <div class="video">
+                                                                                                        <input type="file" id="inputVideo5" accept="video/*" onchange="reproduzirVideo(this)">
+                                                                                                        <video id="video" controls></video>
+                                                                                                    </div>
+                            <button onclick="abrirMoto()"><strong>SAIBA MAIS</strong></button>
+                            <div class="modal">
+                                <dialog class="moto">
+                                    <h2>MOTO ELETRICA</h2>
+                                    <h6>VALOR: R$ 20,00</h6>
+                                    <p>Moto com motor eletrico para criaçada andar pelo parque</p>                       
+                                    <p>PESO MÁXIMO: 45kg.</p>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="titulo">Trilha de moto</p>
+                            <button class="buttonVideo" id="buttonVideo6"><strong>Video</strong></button>
+                                                                                                    <div class="video">
+                                                                                                        <input type="file" id="inputVideo6" accept="video/*" onchange="reproduzirVideo(this)">
+                                                                                                        <video id="video" controls></video>
+                                                                                                    </div>
+                            <button onclick="abrirTrilha()"><strong>SAIBA MAIS</strong></button>
+                            <div class="modal">
+                                <dialog class="trilha">
+                                    <h2>TRILHA DE MOTO</h2>
+                                    <h6>VALOR: R$ 120,00 (somente individual)</h6>
+                                    <p>Agora a trilha do parque pode ser sobre 2 rodas. São aproximadamente 3km de trilha, guiada por um instrutor, onde a liberdade de pilotar uma moto pode ser sentida na pele.</p>                       
+                                    <p>Não é necessário grupos nem agendamento.</p>
+                                    <p>Não é necessário carteira</p>
+                                </dialog>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    
+                    <div class="divButtonDois">
+
+                        <div>
+                            <p class="titulo">Rapel</p>
+                            <button class="buttonVideo" id="buttonVideo7"><strong>Video</strong></button>
+                                                                                                    <div class="video">
+                                                                                                        <input type="file" id="inputVideo7" accept="video/*" onchange="reproduzirVideo(this)">
+                                                                                                        <video id="video" controls></video>
+                                                                                                    </div>
+                            <button onclick="abrirRapel()"><strong>SAIBA MAIS</strong></button>
+                            <div class="modal">
+                                <dialog class="rapel">
+                                    <h2>RAPEL E ESCALADA EM VIA FERRATA</h2>
+                                    <h6>VALOR: R$ 110,00</h6>
+                                    <p>O rapel proporciona um contato do aventureiro com o paredão rochoso, em uma descida de 60m, por cordas, tendo como ponto inicial a plataforma que está posicionada a 135m de altura. O aventureiro retorna ao ponto inicial através de uma escalada em via ferrata. Pode ser feito duas pessoas simultaneamente.</p>                       
+                                    <p>Via Ferrata: É um itinerário montado na parede rochosa da montanha, com degraus de ferro e plataformas, destinado a proporcionar uma escalada pela parede (não necessita de experiência). Oferece uma paisagem ímpar. Atividade de nível alto de condicionamento físico.</p>
+                                    <p>CRIANÇAS: mínimo 1.50m, sempre acompanhado de um adulto.</p>
+                                    <p>SEGURANÇA: descida com corda extra de segurança para 2.500kgf e subida em linha de vida com utilização de talabartes.</p>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="titulo">Quadriciculo</p>
+                            <button class="buttonVideo" id="buttonVideo8"><strong>Video</strong></button>
+                                                                                                    <div class="video">
+                                                                                                        <input type="file" id="inputVideo8" accept="video/*" onchange="reproduzirVideo(this)">
+                                                                                                        <video id="video" controls></video>
+                                                                                                    </div>
+                            <button onclick="abrirQuadri()"><strong>SAIBA MAIS</strong></button>
+                            <div class="modal">
+                                <dialog class="quadri">
+                                    <h2>TRILHA DE QUADRICICLO</h2>
+                                    <h6>Quadriciclo individual – R$150,00</h6>
+                                    <h6>Quadriciclo em dupla – R$180,00</h6>
+                                    <p>A trilha de quadriciclo oferece a experiência em um veículo off road. A atividade pode ser realizada em dupla ou individual. Você irá receber as instruções e realizar uma pista teste para avaliarmos se está apto a pilotar! Oferecemos uma verdadeira trilha, e não um leve passeio, são 3km entre barro, riachos e obstáculos. Leva em média 30 minutos.</p>                       
+                                    <p>Idade permitida para pilotar: a partir de 16 anos (somente acompanhados dos pais ou responsáveis ou com termo abaixo assinado pelo responsável e com cópia de documento junto. Não precisa autorizar em cartório).</p>
+                                    <p>CRIANÇAS: mínimo: 1.30m (CARONA COM OS PAIS E SOB AVALIAÇÃO DO INSTRUTOR).</p>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="titulo">Superman</p>
+                            <button class="buttonVideo" id="buttonVideo9"><strong>Video</strong></button>
+                                                                                                    <div class="video">
+                                                                                                        <input type="file" id="inputVideo9" accept="video/*" onchange="reproduzirVideo(this)">
+                                                                                                        <video id="video" controls></video>
+                                                                                                    </div>
+                            <button onclick="abrirSuperman()"><strong>SAIBA MAIS</strong></button>
+                            <div class="modal">
+                                <dialog class="superman">
+                                    <h2>SUPERMAN</h2>
+                                    <h6>Individual – R$120,00</h6>
+                                    <h6>Dupla (duas pessoas juntas) - R$ 180,00</h6>
+                                    <h6>Trio (três pessoas juntas) – R$ 270,00</h6>
+                                    <p>Em uma espécie de pêndulo, o aventureiro é elevado na posição horizontal, em uma torre de 40m de altura e após, solto para fora do paredão a 180m. A atividade pode ser feita individual, em dupla ou em trio.</p>                       
+                                    <p>Não há peso máximo para a atividade, o que determina é a circunferência, que pode limitar o uso dos equipamentos (normalmente entre 120kg/130kg).</p>
+                                    <p>CRIANÇAS: mínimo: 1.30m.</p>
+                                    <p>Menores de idade somente com presença de responsável ou com termo abaixo assinado por responsável e com cópia de documento junto. Não precisa autorizar em cartório.</p>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <div> 
+                            <p class="titulo">Tirolesa</p>
+                            <button class="buttonVideo" id="buttonVideo10"><strong>Video</strong></button>
+                                                                                                    <div class="video">
+                                                                                                        <input type="file" id="inputVideo10" accept="video/*" onchange="reproduzirVideo(this)">
+                                                                                                        <video id="video" controls></video>
+                                                                                                    </div>
+                            <button onclick="abrirTirolesa()"><strong>SAIBA MAIS</strong></button>
+                            <div class="modal">
+                                <dialog class="tirolesa">
+                                    <h2>TIROLESA</h2>
+                                    <h6>VALOR: R$ 50,00</h6>
+                                    <p>Percurso de tirolesa de 750 metros de extensão, divididos em 2 etapas. Deslizando por roldanas presas em dois cabos de aço, você aproveita uma paisagem única, passando ao lado do “paredão da Eulália”.</p>                       
+                                    <p>CRIANÇAS: Tamanho mínimo: 80cm ou 20 kg – pode ser feito em dupla (criança pequena + adulto – máx. 120 kg).</p>
+                                    <p>SEGURANÇA: Sistema projetado e calculado, com dois cabos de aço de 5.800 kgf cada.</p>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="titulo">escalada</p>
+                            <button class="buttonVideo" id="buttonVideo11"><strong>Video</strong></button>
+                                                                                                    <div class="video">
+                                                                                                        <input type="file" id="inputVideo11" accept="video/*" onchange="reproduzirVideo(this)">
+                                                                                                        <video id="video" controls></video>
+                                                                                                        
+                                                                                                    </div>
+                            <button onclick="abrirEscalada()"><strong>SAIBA MAIS</strong></button>
+                            <div class="modal">
+                                <dialog class="escalada">
+                                    <h2>ESCALADA</h2>
+                                    <h6>VALOR: R$ 50,00</h6>
+                                    <p>Percurso de tirolesa de 750 metros de extensão, divididos em 2 etapas. Deslizando por roldanas presas em dois cabos de aço, você aproveita uma paisagem única, passando ao lado do “paredão da Eulália”.</p>                       
+                                    <p>CRIANÇAS: Tamanho mínimo: 80cm ou 20 kg – pode ser feito em dupla (criança pequena + adulto – máx. 120 kg).</p>
+                                    <p>SEGURANÇA: Sistema projetado e calculado, com dois cabos de aço de 5.800 kgf cada.</p>
+                                </dialog>
+                            </div>
+                        </div>    
+
+                            <div>
+                                <p class="titulo">Preços e combos</p>
+                                <button onclick="abrirPreços()"><strong>SAIBA MAIS</strong></button> 
+                                <div class="modal">
+                                    <dialog class="preços" id="precosAtividades">
+                                        
+                                        <h2 class="title">VALORES DAS ATIVIDADES</h2>
+
+                                        <div class="organizar">
+                                        
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>ESCALADA ARTIFICIAL</h4>
+                                                    <h4>R$ 20,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>ARVORISMO</h4>
+                                                    <h4>R$ 30,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>ESTILINGUE</h4>
+                                                    <h4>R$ 40,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>TIROLESA</h4>
+                                                    <h4>R$ 50,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>RAPEL E ESCALADA EM VIA FERRATA</h4>
+                                                    <h4>R$ 110,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>SUPERMAN</h4>
+                                                    <h4>R$ 120,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>BUNGEE JUMP</h4>
+                                                    <h4>R$ 150,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>QUADRICICULO INDIVIDUAL</h4>
+                                                    <h4>R$ 150,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>QUADRICICLO EM DUPLA (DUAS PESSOAS JUNTAS)</h4>
+                                                    <h4>R$ 180,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>SUPERMAN EM DUPLA (DUAS PESSOAS JUNTAS)</h4>
+                                                    <h4>R$ 180,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>SUPERMAN EM TRIO (TRÊS PESSOAS JUNTAS)</h4>
+                                                    <h4>R$ 270,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>TRILHA DE MOTO</h4>
+                                                    <h4>R$ 120,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>PENDULO</h4>
+                                                    <h4>R$ 150,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>VÍDEO BUNGEE JUMP (GoPro)</h4>
+                                                    <h4>R$ 50,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>VÍDEO SUPERMAN (GoPro)</h4>
+                                                    <h4>R$ 55,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>VÍDEO PÊNDULO</h4>
+                                                    <h4>R$ 55,00</h4>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <h2 class="title">COMBOS COM DESCONTO</h2>
+
+                                        <div class="organizar">
+                                        
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>COMBO 1:</h4>
+                                                    <h4>ARVORISMO + TIROLESA</h4>
+                                                    <h4>R$ 70,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>COMBO 2:</h4>
+                                                    <h4>ARVORISMO + TIROLESA + ESTILINGUE</h4>
+                                                    <h4>R$ 100,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>COMBO 3:</h4>
+                                                    <h4>ARVORISMO + TIROLESA + ATIVIDADE A ESCOLHER (QUADRICICLO OU SUPERMAN OU BUNGEE JUMP)</h4>
+                                                    <h4>R$ 185,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>COMBO 4:</h4>
+                                                    <h4>SUPERMAN (+ R$ 60,00 EM DUPLA) + QUADRICICLO INDIVIDUAL (+ R$ 30,00 EM DUPLA) + BUNGEE JUMP</h4>
+                                                    <h4>R$ 350,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <H4>COMBO 5:</H4>
+                                                    <h4>ARVORISMO + TIROLESA + ESTILINGUE + RAPEL + SUPERMAN + QUADRICICLO INDIVIDUAL + BUNGEE JUMP (Até 5x sem juros e ganhe uma camiseta)</h4>
+                                                    <h4>R$ 495,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>COMBO 6: EXTREME (NOVIDADE)</h4>
+                                                    <h4>PÊNDULO + SUPERMAN + BUNGEE JUMP</h4>
+                                                    <h4>R$ 435,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">
+                                                <img src="Img/preco.png" alt="">
+                                                <div>
+                                                    <h4>*Os combos 3, 4 e 5 permitem trocar o quadriciclo individual por quadriciclo em dupla, com acréscimo de R$ 30,00.</h4>
+                                                    <h4>R$ 20,00</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="precinhos">                                             
+                                                 <div>
+                                                    <h4><strong> Bônus: somente nesse combo, compre os 3 vídeos das atividades por R$70</strong></h4>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                         </div>
+
+
+                                    </dialog>
+                                </div>
+
+                            </div>                               
+                    
+                    
+                     </div>
+
+        
+</section>
+
+<!--  Aqui termina a section do codigo inteiro -->
+
+<footer>
+    <h2>Desenvolvido por Eduardo</h2>
+</footer>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<script src="Js/script.js"></script>
+</body>
+
+</html>
