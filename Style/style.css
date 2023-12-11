@@ -120,9 +120,10 @@ div button{
 }
 
 .precinhos{
+    margin-right: 10px;
     margin-bottom: 16px;
     display: flex;
-    width: 50%;
+    width: 79%;
 }
 
 .precinhos h4{
@@ -131,8 +132,13 @@ div button{
     padding-left: 5px;
 }
 
+#tamanho{
+    font-size: 12px;
+    
+}
+
 #precosAtividades{
-    width: 100%;
+    width: 60%;
 }
 
 
