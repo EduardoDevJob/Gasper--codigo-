@@ -8,6 +8,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    overflow: hidden;
+}
+
 #inputVideo{
     display:none ;
 }
@@ -55,17 +59,30 @@
 #video{
     display:none;
     position: fixed;
-    left: 15%;
-    top: 5%;
-    width: 70%;
+    left: 2.5%;
+    top: 30%;
+    width: 95%;
+}
+
+.divButtonDois{
+    margin-top: -57px;
+
+}
+
+.divButtonUm{
+    position: relative;
+    top: -57px;
+
 }
 
 .fechar{
     display: none;
     position: fixed;
-    width: 10%;
-    bottom: -5px;
-    left: 45%;
+    width: 18%;
+    bottom: 450px;
+    left: 41%;
+    background-color: black;
+    border: 1px solid white;
 }
 
 .principal{
@@ -73,6 +90,7 @@
     background-size: cover;
     display: flex;
     justify-content: space-around;
+    height: 1210px;
 }
 
 div p{
