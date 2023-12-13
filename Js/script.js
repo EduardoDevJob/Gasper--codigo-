@@ -237,7 +237,6 @@ function reproduzirVideo (input){
         videoReproduzir.load();
         videoReproduzir.style.display = 'block';
         buttonFechar.style.display = 'block';
-
     }
 }
 
